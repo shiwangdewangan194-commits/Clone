@@ -5,7 +5,11 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import Eyes from './components/Eyes'
 import Features from './components/Features'
+import Cards from './components/Cards'
+import Footers from './components/Footers'
+import LocomotiveScroll from 'locomotive-scroll'
 const App = () => {
+    const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className = " w-full min-h-screen  text-white bg-zinc-900">
       <Navbar/>
@@ -14,6 +18,8 @@ const App = () => {
       <About/>
       <Eyes/>
       <Features/>
+      <Cards/>
+      <Footers/>
     </div>
   )
 }
