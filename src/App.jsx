@@ -8,10 +8,12 @@ import Features from './components/Features'
 import Cards from './components/Cards'
 import Footers from './components/Footers'
 import LocomotiveScroll from 'locomotive-scroll'
+
 const App = () => {
     const locomotiveScroll = new LocomotiveScroll();
+    
   return (
-    <div className = " w-full min-h-screen  text-white bg-zinc-900">
+    <div className="w-full min-h-screen text-white bg-zinc-900 overflow-x-hidden">
       <Navbar/>
       <LandingPage/>
       <Marquee/>

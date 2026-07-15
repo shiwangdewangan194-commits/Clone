@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 const Eyes = () => {
   const [rotate, setRotate] = useState(0);
 
@@ -18,30 +17,34 @@ const Eyes = () => {
   });
 
   return (
-    <div className="w-full h-screen overflow-hidden">
-      <div data-scroll data-scroll-speed="-.7" className='w-full h-full bg-cover bg-center relative bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg")]'>
-        <div className="top-1/2 left-1/2 gap-15 -translate-x-[50%] -translate-y-[50%] flex absolute ">
-          <div className="w-[15vw] flex justify-center items-center rounded-full h-[15vw] bg-zinc-100 ">
-            <div className="relative w-2/3 h-2/3  rounded-full bg-zinc-900 ">
+    <div className="w-full h-screen overflow-hidden relative">
+      <div 
+        data-scroll 
+        data-scroll-speed="-.7" 
+        className='w-full h-full bg-cover bg-center relative bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg")]'
+      >
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-8 md:gap-16">
+          
+          {/* Left Eye */}
+          <div className="w-[32vw] md:w-[15vw] h-[32vw] md:h-[15vw] flex justify-center items-center rounded-full bg-zinc-100">
+            <div className="relative w-[65%] h-[65%] rounded-full bg-zinc-900">
               <div
-                style={{
-                  transform: `translate(-50%,-50%) rotate(${rotate}deg) `,
-                }}
-                className="  absolute top-1/2 left-1/2  w-full h-10 "
+                style={{ transform: `translate(-50%, -50%) rotate(${rotate}deg)` }}
+                className="absolute top-1/2 left-1/2 w-full h-10 flex items-center"
               >
-                <div className="w-10 h-10 rounded-full bg-zinc-100 "></div>
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>
-          <div className="w-[15vw] flex justify-center items-center  rounded-full h-[15vw] bg-zinc-100 ">
-            <div className="flex justify-center items-center relative w-2/3 h-2/3  rounded-full bg-zinc-900 ">
+
+          {/* Right Eye */}
+          <div className="w-[32vw] md:w-[15vw] h-[32vw] md:h-[15vw] flex justify-center items-center rounded-full bg-zinc-100">
+            <div className="relative w-[65%] h-[65%] rounded-full bg-zinc-900">
               <div
-                style={{
-                  transform: `translate(-50%,-50%) rotate(${rotate}deg) `,
-                }}
-                className="absolute top-1/2 left-1/2   w-full h-10 "
+                style={{ transform: `translate(-50%, -50%) rotate(${rotate}deg)` }}
+                className="absolute top-1/2 left-1/2 w-full h-10 flex items-center"
               >
-                <div className="w-10 h-10 rounded-full bg-zinc-100 "></div>
+                <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>
